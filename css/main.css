@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../../sign_in/fonts/Poppins-Regular.ttf');
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+body {
+	background: url(../../images/geawd.png) no-repeat 95% center fixed;
+  background-color: rgba(250, 250, 250, 1);
+	-webkit-background-size: 50%;
+	-moz-background-size: 50%;
+	-o-background-size: 50%;
+	background-size: 50%;
+}
+input[type="text"],input[type="date"],select,textarea{
+  font-family: Poppins-Regular;
+  background-color: white;
+  border-left: 1px solid rgba(55, 55, 55, 1);
+  border-bottom: 2px solid rgba(200, 200, 200, 1);
+  border-right: 2px solid rgba(200, 200, 200, 1);
+  border-top: 1px solid rgba(55, 55, 55, 1);
+  outline: none;
+}
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[readonly]{
+  background-color: rgba(255, 255, 150, 1);
+}
+button[disabled]{
+  color: #696969;
+}
+.windowArea{
+  position: fixed;
+  top: 100%;
+  overflow: hidden;
+}
+.windowDialog{
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: white;
+  overflow-x: hidden;
+}
+.windowHead{
+  background-color: #337ab7;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  padding: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+}
+.windowContent{
+  width: 100%;
+  border: 2px solid #337ab7;
+  border-top: 0;
+  border-radius: 6px;
+}
+.windowBody{
+  width: 100%;
+  min-height: 10px;
+  font-family: Poppins-Regular;
+}
+.windowClose {
+  float: right;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  box-shadow: 0 0 2px 0 black;
+  border-radius: 3px;
+  background: linear-gradient(to top, red 0%, white 100%);
+  color: #ccc;
+  text-shadow: 0 -1px 0 gray;
+}
+.windowClose:hover,
+.windowClose:focus {
+  box-shadow: 0 0 2px 1px black;
+  cursor: pointer;
+  text-shadow: 0 -1px 0 black;
+
+}
+.menu{
+  position: fixed;
+  width: 100%;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  background-color: rgba(210, 210, 210, 1);
+  border-bottom: 2px solid rgba(150, 150, 150, 1);
+}
+.menuItem{
+  display: inline-flex;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.menuItem:hover{
+  background-color: #337ab7;
+  color: white;
+}
+.menuActive{
+  background-color: #337ab7;
+  color: white;
+}
+.menuContent{
+  position: absolute;
+  top: 27px;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  background-color: rgba(210, 210, 210, 1);
+  border-radius: 3px;
+  z-index: 1;
+  box-shadow: 0 0 2px 0 black;
+}
+.menuContentItem{
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.menuContentItem:hover{
+  background-color: #337ab7;
+  color: white;
+}
+.background{
+  position: fixed;
+  left: 27.5%;
+  top: 50%;
+  width: 45%;
+  height: 250px;
+  margin-top: -125px;
+  border-top: 2px solid rgba(200, 200, 200, 1);
+  border-left: 2px solid rgba(200, 200, 200, 1);
+  border-bottom: 1px solid rgba(55, 55, 55, 1);
+  border-right: 1px solid rgba(55, 55, 55, 1);
+  background-color: #87ceeb;
+  border-radius: 1px;
+  z-index: -2
+}
+.backgroundImage{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+.header1{
+  position: relative;
+  top: -60px;
+  left: 25%;
+  font-family: Poppins-Regular;
+  font-size: 25px;
+  color: blue;
+}
+.header2{
+  position: relative;
+  top: -60px;
+  left: 35%;
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  color: red;
+}
+.backgroundForm{
+  position: relative;
+  top: -40px;
+  display:flex;
+  margin: 2px;
+  left: 30%;
+}
+.backgroundLabel{
+  min-width: 50px;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: blue;
+  padding: 3px;
+  text-align: right;
+}
+.backgroundText{
+  width: 220px;
+  position: relative;
+  border-bottom: 2px solid rgba(200, 200, 200, 1);
+  border-right: 2px solid rgba(200, 200, 200, 1);
+  border-top: 1px solid rgba(55, 55, 55, 1);
+  border-left: 1px solid rgba(55, 55, 55, 1);
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: blue;
+  padding: 2px;
+}
+.helper{
+  position: fixed;
+  left: 30%;
+  top: 50px;
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(70, 70, 70, 1);
+  z-index: 2;
+}
+.index{
+  color: blue;
+}

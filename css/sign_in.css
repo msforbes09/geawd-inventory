@@ -1,0 +1,60 @@
+#signinWindow{
+  width: 30%;
+  left: 35%;
+  top: 50%;
+  margin-top: -150px;
+}
+.frame{
+  height: 230px;
+  border: 1px solid rgba(150, 150, 150, 1);
+  margin: 5px;
+  background-color: rgba(220, 220, 220, 1);
+}
+.signinImage{
+  position: relative;
+  top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+.signinInput{
+  position: relative;
+  left: 5%;
+  top: 20px;
+  display: inline-flex;
+  position: relative;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  width: 90%;
+  padding: 2px;
+}
+.signinLabel{
+  width: 35%;
+  color: blue;
+  padding: 3px;
+}
+.signinText{
+  border-bottom: 2px solid rgba(200, 200, 200, 1);
+  border-right: 2px solid rgba(200, 200, 200, 1);
+  border-top: 1px solid rgba(55, 55, 55, 1);
+  border-left: 1px solid rgba(55, 55, 55, 1);
+  width: 70%;
+  padding: 2px;
+  color: red;
+  text-align: center;
+  outline: none;
+}
+.signinButton{
+  position: relative;
+  top: 20px;
+  float: right;
+  margin-right: 5%;
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #337ab7;
+  color: white;
+}
